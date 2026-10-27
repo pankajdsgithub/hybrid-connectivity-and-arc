@@ -1,14 +1,11 @@
-# hybrid-connectivity-and-arc
+# Hybrid Connectivity and Azure Arc
 
-Azure portfolio repository for enterprise architecture, cloud transformation, and platform engineering.
+This repository documents enterprise hybrid connectivity, Azure Arc enablement, and governance patterns for unified operations across cloud and on-premise estates.
 
-## Scope
-
-- Azure solution architecture
-- Cloud migration and landing-zone design
-- Platform engineering, GitOps, and Kubernetes
-- Security, governance, and DevSecOps
-
-## Purpose
-
-This repository is intended as a reusable reference and portfolio asset for enterprise Azure delivery.
+```mermaid
+flowchart LR
+    A[On-prem] --> B[ExpressRoute / VPN]
+    B --> C[Azure]
+    D[Arc-enabled Servers] --> E[Unified Operations]
+    F[Arc-enabled Kubernetes] --> E
+```
